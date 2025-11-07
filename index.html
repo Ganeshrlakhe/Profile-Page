@@ -1,37 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ganesh Lakhe - Full Stack Developer</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ganesh Lakhe | Web Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="container">
+        <div class="profile-img">
+          <img src="./profile.jpg " width="180px" alt="Profile Picture" />
+        </div>
+        <div class="header-content">
+          <h1>Ganesh Lakhe</h1>
+          <p>Frontend Developer</p>
+          <a href="#contact" class="btn">Get In Touch</a>
+        </div>
+      </div>
+    </header>
 
-<body>
+    <!-- Navigation -->
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-  <!-- Hero -->
-  <div class="hero">
-    <h1>Ganesh Lakhe</h1>
-    <p>Full Stack Developer</p>
-    <p style="font-size:18px;">Building modern web applications with clean, semantic code.</p>
-  </div>
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              Hello! I'm Alex, a passionate frontend developer with over 5 years
+              of experience creating beautiful and functional web interfaces. I
+              specialize in HTML, CSS, and JavaScript, with a keen eye for
+              design and user experience.
+            </p>
+            <p>
+              My approach combines technical expertise with creative
+              problem-solving to deliver solutions that not only look great but
+              also perform exceptionally well across all devices and platforms.
+            </p>
+            <p>
+              When I'm not coding, you can find me exploring new design trends,
+              contributing to open-source projects, or hiking in the mountains.
+            </p>
+          </div>
+          <div class="skills">
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>HTML/CSS</span>
+                <span>95%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 95%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>JavaScript</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>UI/UX Design</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>Responsive Design</span>
+                <span>95%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 95%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Navigation -->
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#learning">Learning</a></li>
-      <li><a href="#tools">Tools</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <img
+              class="project-img"
+              src="https://images.unsplash.com/photo-1641840296052-1b41c4bce493?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074"
+              alt="Camera and AI - Image Caption Generator"
+            />
+            <h3>Image Caption Generator</h3>
+            <p>
+              AI-powered system that describes images using CNN + LSTM
+              architecture and Hugging Face models.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">TensorFlow</span>
+              <span class="tag">Hugging Face</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <img
+              class="project-img"
+              src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1200&q=80"
+              alt="News on mobile - News App"
+            />
+            <h3>News App</h3>
+            <p>
+              React-based live news application integrating external API for top
+              global headlines and categories.
+            </p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">API Integration</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <img
+              class="project-img"
+              src="https://plus.unsplash.com/premium_photo-1664201890375-f8fa405cdb7d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070"
+              alt="Product display - E-commerce Website"
+            />
+            <h3>E-commerce Website</h3>
+            <p>
+              Client project featuring product filtering, cart management, and
+              checkout flow using Redux.
+            </p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Redux</span>
+              <span class="tag">CSS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- About -->
-  <div class="container" id="about">
-    <h2>About Me</h2>
-    <p>I’m <b>Ganesh Lakhe</b>, a Full Stack Developer passionate about building clean and efficient web applications. Currently strengthening my core in HTML, CSS, and web standards before moving deeper into backend development.</p>
-    <p>I believe in continuous learning, simple UI, and reliable code that scales well over time.</p>
-  </div>
-</body>
+   
+  </body>
 </html>
