@@ -10,9 +10,18 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
   </head>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
   <body>
     <!-- Header Section -->
-    <header>
+    <header id="home">
       <div class="container">
         <div class="profile-img">
           <img src="./profile.jpg " width="180px" alt="Profile Picture" />
@@ -25,15 +34,6 @@
       </div>
     </header>
 
-    <!-- Navigation -->
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
 
     <!-- About Section -->
     <section id="about">
@@ -152,9 +152,9 @@
                 <div class="exp-icon">
                   <i class="fas fa-code"></i>
                 </div>
-                <h3>Senior Frontend Developer</h3>
-                <h4>Tech Solutions Inc.</h4>
-                <span class="exp-period">2021 - Present</span>
+                <h3>FullStack Developer</h3>
+                <h4>Thinkbridge Software pvt ltd</h4>
+                <span class="exp-period">2025 - Present</span>
               </div>
               <div class="exp-card-back">
                 <ul class="exp-details">
@@ -178,9 +178,9 @@
                 <div class="exp-icon">
                   <i class="fas fa-paint-brush"></i>
                 </div>
-                <h3>UI/UX Designer & Developer</h3>
-                <h4>Creative Agency Co.</h4>
-                <span class="exp-period">2019 - 2021</span>
+                <h3>Software Engineer</h3>
+                <h4>NeuspaarX pvt ltd</h4>
+                <span class="exp-period">2034 - 2025</span>
               </div>
               <div class="exp-card-back">
                 <ul class="exp-details">
@@ -205,8 +205,8 @@
                   <i class="fas fa-laptop-code"></i>
                 </div>
                 <h3>Frontend Developer</h3>
-                <h4>Web Studio Pro</h4>
-                <span class="exp-period">2017 - 2019</span>
+                <h4>ETON</h4>
+                <span class="exp-period">2023 - 2024</span>
               </div>
               <div class="exp-card-back">
                 <ul class="exp-details">
@@ -356,5 +356,29 @@
         <p class="copyright">© 2025 Ganesh Lakhe | All rights reserved.</p>
       </div>
     </footer>
+
+    <!-- Back to top (floating) -->
+    <a href="#home" class="back-to-top" aria-label="Back to top">
+      <i class="fas fa-chevron-up" aria-hidden="true"></i>
+    </a>
+
+    <script>
+      // filepath: c:\Users\ganes.GANESH\OneDrive\Desktop\thinkbridge\Profile-Page\index.html
+      document.addEventListener('DOMContentLoaded', function () {
+        var btn = document.querySelector('.back-to-top');
+        if (!btn) return;
+        // Toggle visibility on scroll
+        window.addEventListener('scroll', function () {
+          if (window.pageYOffset > 300) btn.classList.add('show');
+          else btn.classList.remove('show');
+        });
+        // Smooth scroll fallback / ensure scrollIntoView
+        btn.addEventListener('click', function (e) {
+          e.preventDefault();
+          var target = document.getElementById('home');
+          if (target) target.scrollIntoView({ behavior: 'smooth' });
+        });
+      });
+    </script>
   </body>
 </html>
